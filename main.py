@@ -2,18 +2,15 @@
 from dotenv import load_dotenv  
 
 load_dotenv()
-# from langchain_core.prompts import PromptTemplate
 from langchain import hub;
 from langchain.agents import AgentExecutor
 from langchain.agents.react.agent import create_react_agent
 from langchain_anthropic import ChatAnthropic  
 from langchain_tavily import TavilySearch
-# from langchain_ollama import ChatOllama # Imports the Ollama chat model wrapper from LangChain.
 
 tools = [TavilySearch()]
 
 
-# 3. Define the main function that runs the logic.
 def main():
     # Print a friendly message.
     print("Hello from langchain-course!")
